@@ -1,12 +1,18 @@
 "use strict";
-class Department {
+let add;
+add = (n1, n2) => {
+    return n1 + n2;
+};
+class Person {
     constructor(n) {
+        this.age = 30;
         this.name = n;
     }
-    describe() {
-        console.log("Department: ", this.name);
+    greet(phrase) {
+        console.log(phrase + " " + this.name);
     }
 }
-const accounting = new Department("Accounting");
-accounting.describe();
-console.log(accounting);
+let user1;
+user1 = new Person("Alex");
+user1.greet("Hi there I am ");
+console.log(user1);
