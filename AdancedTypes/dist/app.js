@@ -10,6 +10,20 @@ function add(a, b) {
     }
     return a + b;
 }
+const result = add("Alex", "Reid");
+result.split(" ");
+const fetchedUserData = {
+    id: "u1",
+    name: "Max",
+    job: {
+        title: "CEO",
+        desciption: "My own company",
+    },
+};
+console.log(fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job.title);
+const userInput = null;
+const storedData = userInput !== null && userInput !== void 0 ? userInput : "DEFAULT";
+console.log(storedData);
 function printEmployeeInformation(emp) {
     console.log("Name: " + emp.name);
     if ("privileges" in emp) {
@@ -55,5 +69,12 @@ function moveAniaml(animal) {
     console.log("Moving at speed: ", speed);
 }
 moveAniaml({ type: "bird", flyingSpeed: 30 });
-const userInputElement = (document.getElementById("user-input"));
+// const userInputElement = <HTMLInputElement>(
+//   document.getElementById("user-input")!
+// );
+const userInputElement = document.getElementById("user-input");
 userInputElement.value = "Hi there!";
+const errorBag = {
+    email: "Not a valid email!",
+    username: "Must start with a capital character!",
+};
